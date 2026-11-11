@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="eng-ca">
+<html lang="eng-CA">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
-    
-    <!-- Mobile -->
-    
-    
-    <!-- Tablet -->
-    
-    <!-- Desktop -->
     
     <style>
       body {
@@ -20,10 +14,29 @@
       }
 
       /* Responsive Design Additions */
-
-      /*your CSS will go here*/
-
-      /* misc. styling */
+      
+      /* Mobile */
+      @media (max-width: 600px) {
+        body {
+          background-color: yellow;
+          font-size: 0.75em;
+        }
+        
+        img, p {
+          width: 100%;
+        }
+      }
+            
+      /* Desktop */
+      @media (min-width: 601px) {
+        img {
+          width: 800px;
+        }
+        
+        p {
+          width: 600px;
+        }
+      }
 
       ul a {
       color: magenta;
